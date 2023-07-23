@@ -6,103 +6,160 @@
     <title>Document</title>
   </head>
   <body>
+    <style>
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+    </style>
+    <style>
+      html {
+        font-family: "Phenomena", Arial, sans-serif;
+        color: rgb(86, 96, 110);
+      }
+
+      td {
+        vertical-align: middle;
+      }
+
+      tr {
+        text-align: center;
+        height: 40px;
+      }
+
+      thead {
+        background: #69ba9a;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+      }
+
+      .js-equipment-row:nth-child(2n + 1) {
+        background: rgba(105, 186, 154, 0.5);
+      }
+    </style>
     <div class="dataTables_scroll dtfc-has-left" style="position: relative">
-      <div
-        class="dataTables_scrollHead"
-        style="overflow: hidden; position: relative; border: 0px; width: 100%"
-      >
-        <div
-          class="dataTables_scrollHeadInner"
-          style="box-sizing: content-box; width: 944px; padding-right: 0px"
-        >
-          <table
-            class="table table-striped b-fixed-column js-calc-device dataTable no-footer"
-            role="grid"
-            style="margin-left: 0px; width: 944px"
-          >
-            <thead>
-              <tr role="row">
-                <th
-                  class="sorting dtfc-fixed-left"
-                  tabindex="0"
-                  aria-controls="DataTables_Table_0"
-                  rowspan="1"
-                  colspan="1"
-                  style="width: 131.75px; left: 0px; position: sticky"
-                  aria-label="Майнер: активировать для сортировки столбца по возрастанию"
-                >
-                  Майнер
-                </th>
-                <th
-                  class="sorting"
-                  tabindex="0"
-                  aria-controls="DataTables_Table_0"
-                  rowspan="1"
-                  colspan="1"
-                  style="width: 81.75px"
-                  aria-label="МощностьПотребления: активировать для сортировки столбца по возрастанию"
-                >
-                  Мощность<br />Потребления
-                </th>
-                <th
-                  class="sorting_disabled"
-                  rowspan="1"
-                  colspan="1"
-                  style="width: 68.5px"
-                  aria-label="Хешрейт"
-                >
-                  Хешрейт
-                </th>
-                <th
-                  class="sorting"
-                  tabindex="0"
-                  aria-controls="DataTables_Table_0"
-                  rowspan="1"
-                  colspan="1"
-                  style="width: 46.75px"
-                  aria-label="Монета: активировать для сортировки столбца по возрастанию"
-                >
-                  Монета
-                </th>
-                <th
-                  class="sorting"
-                  tabindex="0"
-                  aria-controls="DataTables_Table_0"
-                  rowspan="1"
-                  colspan="1"
-                  style="width: 76.75px"
-                  aria-label="Расходы: активировать для сортировки столбца по возрастанию"
-                >
-                  Расходы
-                </th>
-                <th
-                  class="sorting sorting_desc"
-                  tabindex="0"
-                  aria-controls="DataTables_Table_0"
-                  rowspan="1"
-                  colspan="1"
-                  style="width: 82.75px"
-                  aria-label="Доходв день: активировать для сортировки столбца по возрастанию"
-                  aria-sort="descending"
-                >
-                  Доход<br />в день
-                </th>
-                <th
-                  class="sorting"
-                  tabindex="0"
-                  aria-controls="DataTables_Table_0"
-                  rowspan="1"
-                  colspan="1"
-                  style="width: 96.75px"
-                  aria-label="Доходв месяц: активировать для сортировки столбца по возрастанию"
-                >
-                  Доход<br />в месяц
-                </th>
-              </tr>
-            </thead>
-          </table>
-        </div>
-      </div>
       <div
         class="dataTables_scrollBody"
         style="position: relative; overflow: auto; width: 100%"
@@ -111,176 +168,92 @@
           class="table table-striped b-fixed-column js-calc-device dataTable no-footer dtfc-has-left"
           id="DataTables_Table_0"
           role="grid"
-          style="width: 959px"
+          style="width: 100vw"
         >
           <thead>
-            <tr role="row" style="height: 0px">
+            <tr role="row">
               <th
                 class="sorting dtfc-fixed-left"
+                tabindex="0"
                 aria-controls="DataTables_Table_0"
                 rowspan="1"
                 colspan="1"
-                style="
-                  width: 131.75px;
-                  left: 0px;
-                  position: sticky;
-                  padding-top: 0px;
-                  padding-bottom: 0px;
-                  border-top-width: 0px;
-                  border-bottom-width: 0px;
-                  height: 0px;
-                "
+                style="width: calc(100vw / 7); left: 0px; position: sticky"
                 aria-label="Майнер: активировать для сортировки столбца по возрастанию"
               >
-                <div
-                  class="dataTables_sizing"
-                  style="height: 0px; overflow: hidden"
-                >
-                  Майнер
-                </div>
+                Майнер
               </th>
               <th
                 class="sorting"
+                tabindex="0"
                 aria-controls="DataTables_Table_0"
                 rowspan="1"
                 colspan="1"
-                style="
-                  width: 81.75px;
-                  padding-top: 0px;
-                  padding-bottom: 0px;
-                  border-top-width: 0px;
-                  border-bottom-width: 0px;
-                  height: 0px;
-                "
+                style="width: calc(100vw / 7)"
                 aria-label="МощностьПотребления: активировать для сортировки столбца по возрастанию"
               >
-                <div
-                  class="dataTables_sizing"
-                  style="height: 0px; overflow: hidden"
-                >
-                  Мощность<br />Потребления
-                </div>
+                Мощность<br />Потребления
               </th>
               <th
                 class="sorting_disabled"
                 rowspan="1"
                 colspan="1"
-                style="
-                  width: 68.5px;
-                  padding-top: 0px;
-                  padding-bottom: 0px;
-                  border-top-width: 0px;
-                  border-bottom-width: 0px;
-                  height: 0px;
-                "
+                style="width: calc(100vw / 7)"
                 aria-label="Хешрейт"
               >
-                <div
-                  class="dataTables_sizing"
-                  style="height: 0px; overflow: hidden"
-                >
-                  Хешрейт
-                </div>
+                Хешрейт
               </th>
               <th
                 class="sorting"
+                tabindex="0"
                 aria-controls="DataTables_Table_0"
                 rowspan="1"
                 colspan="1"
-                style="
-                  width: 46.75px;
-                  padding-top: 0px;
-                  padding-bottom: 0px;
-                  border-top-width: 0px;
-                  border-bottom-width: 0px;
-                  height: 0px;
-                "
+                style="width: calc(100vw / 7)"
                 aria-label="Монета: активировать для сортировки столбца по возрастанию"
               >
-                <div
-                  class="dataTables_sizing"
-                  style="height: 0px; overflow: hidden"
-                >
-                  Монета
-                </div>
+                Монета
               </th>
               <th
                 class="sorting"
+                tabindex="0"
                 aria-controls="DataTables_Table_0"
                 rowspan="1"
                 colspan="1"
-                style="
-                  width: 76.75px;
-                  padding-top: 0px;
-                  padding-bottom: 0px;
-                  border-top-width: 0px;
-                  border-bottom-width: 0px;
-                  height: 0px;
-                "
+                style="width: calc(100vw / 7)"
                 aria-label="Расходы: активировать для сортировки столбца по возрастанию"
               >
-                <div
-                  class="dataTables_sizing"
-                  style="height: 0px; overflow: hidden"
-                >
-                  Расходы
-                </div>
+                Расходы
               </th>
               <th
                 class="sorting sorting_desc"
+                tabindex="0"
                 aria-controls="DataTables_Table_0"
                 rowspan="1"
                 colspan="1"
-                style="
-                  width: 82.75px;
-                  padding-top: 0px;
-                  padding-bottom: 0px;
-                  border-top-width: 0px;
-                  border-bottom-width: 0px;
-                  height: 0px;
-                "
+                style="width: calc(100vw / 7)"
                 aria-label="Доходв день: активировать для сортировки столбца по возрастанию"
                 aria-sort="descending"
               >
-                <div
-                  class="dataTables_sizing"
-                  style="height: 0px; overflow: hidden"
-                >
-                  Доход<br />в день
-                </div>
+                Доход<br />в день
               </th>
               <th
                 class="sorting"
+                tabindex="0"
                 aria-controls="DataTables_Table_0"
                 rowspan="1"
                 colspan="1"
-                style="
-                  width: 96.75px;
-                  padding-top: 0px;
-                  padding-bottom: 0px;
-                  border-top-width: 0px;
-                  border-bottom-width: 0px;
-                  height: 0px;
-                "
+                style="width: calc(100vw / 7)"
                 aria-label="Доходв месяц: активировать для сортировки столбца по возрастанию"
               >
-                <div
-                  class="dataTables_sizing"
-                  style="height: 0px; overflow: hidden"
-                >
-                  Доход<br />в месяц
-                </div>
+                Доход<br />в месяц
               </th>
             </tr>
           </thead>
           <tbody>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000613">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-s19-xp-hyd/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S19 XP Hyd</a
-                >
+                Antminer S19 XP Hyd
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3250</strong><span>W</span>
@@ -302,11 +275,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="21.377058">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-ka3/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer KA3</a
-                >
+                Antminer KA3
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3154</strong><span>W</span>
@@ -328,11 +297,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000336">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-s19-xp/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S19 XP</a
-                >
+                Antminer S19 XP
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3010</strong><span>W</span>
@@ -354,11 +319,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000312">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/avalon-a1366/"
-                  class="text-truncate b-equipment__title"
-                  >Avalon Miner A1366</a
-                >
+                Avalon Miner A1366
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3250</strong><span>W</span>
@@ -380,11 +341,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000303">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/whatsminer-m50s-126th/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M50S</a
-                >
+                Whatsminer M50S
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3276</strong><span>W</span>
@@ -406,11 +363,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000293">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-s19jpro+/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S19j Pro+ 122Th</a
-                >
+                Antminer S19j Pro+ 122Th
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3550</strong><span>W</span>
@@ -432,11 +385,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.089788">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-l7/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer L7</a
-                >
+                Antminer L7
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3425</strong><span>W</span>
@@ -458,11 +407,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000274">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/whatsminer-m50-114th/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M50</a
-                >
+                Whatsminer M50
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3306</strong><span>W</span>
@@ -484,11 +429,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.085535">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antmajner-l7-9050m/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer L7 9050M</a
-                >
+                Antminer L7 9050M
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3300</strong><span>W</span>
@@ -510,11 +451,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000264">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antmajner-s19a-pro-110t/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S19A Pro 110T</a
-                >
+                Antminer S19A Pro 110T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3250</strong><span>W</span>
@@ -536,11 +473,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000264">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antmajner-s19-pro-110t/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S19 Pro 110T</a
-                >
+                Antminer S19 Pro 110T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3250</strong><span>W</span>
@@ -562,11 +495,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000264">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/whatsminer-m30s-110t/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M30S++ 110T</a
-                >
+                Whatsminer M30S++ 110T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3400</strong><span>W</span>
@@ -588,11 +517,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000259">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/whatsminer-m30s-108t/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M30S++ 108T</a
-                >
+                Whatsminer M30S++ 108T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3400</strong><span>W</span>
@@ -614,11 +539,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000255">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/whatsminer-m30s-106t/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M30S++ 106T</a
-                >
+                Whatsminer M30S++ 106T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3400</strong><span>W</span>
@@ -640,11 +561,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.407081">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/bitmain-antminer-e9-pro/"
-                  class="text-truncate b-equipment__title"
-                  >Bitmain Antminer E9 PRO</a
-                >
+                Bitmain Antminer E9 PRO
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">2200</strong><span>W</span>
@@ -666,11 +583,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000250">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antmajner-s19j-pro-104t/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S19J Pro 104T</a
-                >
+                Antminer S19J Pro 104T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3068</strong><span>W</span>
@@ -692,11 +605,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000250">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/whatsminer-m30s-104t/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M30S++ 104T</a
-                >
+                Whatsminer M30S++ 104T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3400</strong><span>W</span>
@@ -718,11 +627,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000245">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/whatsminer-m30s-102t/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M30S+ 102T</a
-                >
+                Whatsminer M30S+ 102T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3400</strong><span>W</span>
@@ -744,11 +649,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000240">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antmajner-s19j-pro-100t/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S19J Pro 100T</a
-                >
+                Antminer S19J Pro 100T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3250</strong><span>W</span>
@@ -770,11 +671,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.029428">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/whatsminer-m30s-100t/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M30S+ 100T</a
-                >
+                Whatsminer M30S+ 100T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3400</strong><span>W</span>
@@ -796,11 +693,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.215796">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-d7/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer D7</a
-                >
+                Antminer D7
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3148</strong><span>W</span>
@@ -822,11 +715,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000231">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antmajner-s19j-pro-96t/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S19J Pro 96T</a
-                >
+                Antminer S19J Pro 96T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3250</strong><span>W</span>
@@ -847,11 +736,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000231">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-s19/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S19</a
-                >
+                Antminer S19
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3250</strong><span>W</span>
@@ -872,11 +757,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000231">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/avalon-a1246-96t/"
-                  class="text-truncate b-equipment__title"
-                  >Avalon A1246 96T</a
-                >
+                Avalon A1246 96T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3420</strong><span>W</span>
@@ -897,11 +778,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000228">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antmajner-s19-95t/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S19 95T</a
-                >
+                Antminer S19 95T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3250</strong><span>W</span>
@@ -922,11 +799,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.027368">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/avalon-a1246-93t/"
-                  class="text-truncate b-equipment__title"
-                  >Avalon A1246 93T</a
-                >
+                Avalon A1246 93T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3400</strong><span>W</span>
@@ -947,11 +820,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000221">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antmajner-s19j-pro-92t/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S19J Pro 92T</a
-                >
+                Antminer S19J Pro 92T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3250</strong><span>W</span>
@@ -972,11 +841,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000216">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antmajner-s19-90t/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S19 90T</a
-                >
+                Antminer S19 90T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3250</strong><span>W</span>
@@ -997,11 +862,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000216">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/avalon-a1246-90t/"
-                  class="text-truncate b-equipment__title"
-                  >Avalon A1246 90T</a
-                >
+                Avalon A1246 90T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3400</strong><span>W</span>
@@ -1022,11 +883,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000216">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/avalon-a1246/"
-                  class="text-truncate b-equipment__title"
-                  >Avalon A1246</a
-                >
+                Avalon A1246
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3420</strong><span>W</span>
@@ -1047,11 +904,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.026486">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/whatsminer-m30s-90t/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M30S 90T</a
-                >
+                Whatsminer M30S 90T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3600</strong><span>W</span>
@@ -1072,11 +925,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000211">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/16-whatsminer-m30s/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M30S</a
-                >
+                Whatsminer M30S
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3344</strong><span>W</span>
@@ -1097,11 +946,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000209">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/avalon-a1246-87t/"
-                  class="text-truncate b-equipment__title"
-                  >Avalon A1246 87T</a
-                >
+                Avalon A1246 87T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3400</strong><span>W</span>
@@ -1122,11 +967,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.331863">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-e9-3gh/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer E9 3Gh</a
-                >
+                Antminer E9 3Gh
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">2550</strong><span>W</span>
@@ -1148,11 +989,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000207">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/whatsminer-m30s-86t/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M30S 86T</a
-                >
+                Whatsminer M30S 86T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3300</strong><span>W</span>
@@ -1173,11 +1010,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.025308">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/whatsminer-m31s-86t/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M31S+ 86T</a
-                >
+                Whatsminer M31S+ 86T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3400</strong><span>W</span>
@@ -1198,11 +1031,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000204">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/avalon-a1246-85t/"
-                  class="text-truncate b-equipment__title"
-                  >Avalon A1246 85T</a
-                >
+                Avalon A1246 85T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3420</strong><span>W</span>
@@ -1223,11 +1052,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000202">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-t19/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer T19</a
-                >
+                Antminer T19
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3150</strong><span>W</span>
@@ -1248,11 +1073,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000202">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/whatsminer-m31s-84t/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M31S+ 84T</a
-                >
+                Whatsminer M31S+ 84T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3360</strong><span>W</span>
@@ -1273,11 +1094,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.024720">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/whatsminer-m30s-84t/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M30S 84T</a
-                >
+                Whatsminer M30S 84T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3268</strong><span>W</span>
@@ -1298,11 +1115,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.024720">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/whatsminer-m31s-74t/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M31S 74T</a
-                >
+                Whatsminer M31S 74T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3500</strong><span>W</span>
@@ -1323,11 +1136,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.024426">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/avalon-a1246-83t/"
-                  class="text-truncate b-equipment__title"
-                  >Avalon A1246 83T</a
-                >
+                Avalon A1246 83T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3400</strong><span>W</span>
@@ -1348,11 +1157,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000197">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antmajner-s19-82t/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S19 82T</a
-                >
+                Antminer S19 82T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3240</strong><span>W</span>
@@ -1373,11 +1178,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000195">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/avalon-a1166-pro-78t/"
-                  class="text-truncate b-equipment__title"
-                  >Avalon A1166 Pro 78T</a
-                >
+                Avalon A1166 Pro 78T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3400</strong><span>W</span>
@@ -1398,11 +1199,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000195">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/avalon-a1166pro-81t/"
-                  class="text-truncate b-equipment__title"
-                  >Avalon A1166 Pro 81T</a
-                >
+                Avalon A1166 Pro 81T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3400</strong><span>W</span>
@@ -1423,11 +1220,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000195">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/avalon-1166-pro/"
-                  class="text-truncate b-equipment__title"
-                  >Avalon 1166 Pro</a
-                >
+                Avalon 1166 Pro
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3400</strong><span>W</span>
@@ -1448,11 +1241,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000183">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/whatsminer-m31s-76t/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M31S+ 76T</a
-                >
+                Whatsminer M31S+ 76T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3490</strong><span>W</span>
@@ -1473,11 +1262,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000180">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/avalon-a1166pro-75t/"
-                  class="text-truncate b-equipment__title"
-                  >Avalon A1166 Pro 75T</a
-                >
+                Avalon A1166 Pro 75T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3400</strong><span>W</span>
@@ -1498,11 +1283,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.000175">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-s17/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S17</a
-                >
+                Antminer S17
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">2920</strong><span>W</span>
@@ -1523,11 +1304,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.020011">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/avalon-a1126-pro-s/"
-                  class="text-truncate b-equipment__title"
-                  >Avalon A1126 Pro S</a
-                >
+                Avalon A1126 Pro S
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3400</strong><span>W</span>
@@ -1548,11 +1325,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.150961">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-z15/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer Z15</a
-                >
+                Antminer Z15
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">1510</strong><span>W</span>
@@ -1574,11 +1347,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.000154">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-s17e/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S17e</a
-                >
+                Antminer S17e
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">2880</strong><span>W</span>
@@ -1599,11 +1368,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.018537">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/avalon-1146-pro/"
-                  class="text-truncate b-equipment__title"
-                  >Avalon 1146 Pro</a
-                >
+                Avalon 1146 Pro
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3276</strong><span>W</span>
@@ -1624,11 +1389,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.018243">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/whatsminer-m20s-62t/"
-                  class="text-truncate b-equipment__title"
-                  >Whatsminer M20S</a
-                >
+                Whatsminer M20S
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">2976</strong><span>W</span>
@@ -1649,11 +1410,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.045367">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/bee-miner-ld3/"
-                  class="text-truncate b-equipment__title"
-                  >Bee Miner LD3</a
-                >
+                Bee Miner LD3
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3500</strong><span>W</span>
@@ -1675,11 +1432,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.016771">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/innosilicon-t3-miner/"
-                  class="text-truncate b-equipment__title"
-                  >Innosilicon T3+ 57T</a
-                >
+                Innosilicon T3+ 57T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3300</strong><span>W</span>
@@ -1700,11 +1453,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.016183">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-t17-55t/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer T17 55T</a
-                >
+                Antminer T17 55T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">2750</strong><span>W</span>
@@ -1725,11 +1474,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.015594">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-s17-pro/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S17 Pro</a
-                >
+                Antminer S17 Pro
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">2094</strong><span>W</span>
@@ -1750,11 +1495,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.014712">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-s17-pro-50t/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer S17 Pro 50T</a
-                >
+                Antminer S17 Pro 50T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">1975</strong><span>W</span>
@@ -1775,11 +1516,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.014712">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/ebit-e12/"
-                  class="text-truncate b-equipment__title"
-                  >Ebit E12+</a
-                >
+                Ebit E12+
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">2500</strong><span>W</span>
@@ -1800,11 +1537,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.090425">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/spondoolies-spx36/"
-                  class="text-truncate b-equipment__title"
-                  >Spondoolies SPx36</a
-                >
+                Spondoolies SPx36
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">4400</strong><span>W</span>
@@ -1826,11 +1559,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="34.940067">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antmajner-l7-9300m/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer L7 9300M</a
-                >
+                Antminer L7 9300M
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">2080</strong><span>W</span>
@@ -1852,11 +1581,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.073682">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/strongu-stu-u6/"
-                  class="text-truncate b-equipment__title"
-                  >StrongU STU-U6</a
-                >
+                StrongU STU-U6
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">2100</strong><span>W</span>
@@ -1878,11 +1603,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.023250">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/goldshell-lt5-pro/"
-                  class="text-truncate b-equipment__title"
-                  >Goldshell LT5 Pro</a
-                >
+                Goldshell LT5 Pro
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">3100</strong><span>W</span>
@@ -1904,11 +1625,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.064699">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/asicminer-zeon-180k/"
-                  class="text-truncate b-equipment__title"
-                  >ASICminer Zeon 180K</a
-                >
+                ASICminer Zeon 180K
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">2200</strong><span>W</span>
@@ -1930,11 +1647,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.132409">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-dr5/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer DR5</a
-                >
+                Antminer DR5
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">1610</strong><span>W</span>
@@ -1955,11 +1668,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.019375">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/goldshell-lt5/"
-                  class="text-truncate b-equipment__title"
-                  >Goldshell LT5</a
-                >
+                Goldshell LT5
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">2080</strong><span>W</span>
@@ -1981,11 +1690,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.050322">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/innosilicon-a9/"
-                  class="text-truncate b-equipment__title"
-                  >Innosilicon A9++</a
-                >
+                Innosilicon A9++
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">1550</strong><span>W</span>
@@ -2007,11 +1712,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.016823">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/goldshell-xs6/"
-                  class="text-truncate b-equipment__title"
-                  >Goldshell XS6</a
-                >
+                Goldshell XS6
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">2250</strong><span>W</span>
@@ -2033,11 +1734,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.048525">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-z11/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer Z11</a
-                >
+                Antminer Z11
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">1418</strong><span>W</span>
@@ -2059,11 +1756,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="20.965730">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/innosilicon-a6-ltcmaster/"
-                  class="text-truncate b-equipment__title"
-                  >Innosilicon A6 LTCMaster</a
-                >
+                Innosilicon A6 LTCMaster
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">1500</strong><span>W</span>
@@ -2085,11 +1778,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.043876">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/fusionsilicon-x7/"
-                  class="text-truncate b-equipment__title"
-                  >FusionSilicon X7</a
-                >
+                FusionSilicon X7
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">1300</strong><span>W</span>
@@ -2111,11 +1800,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.057524">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/jasminer-x4-server-520m/"
-                  class="text-truncate b-equipment__title"
-                  >Jasminer X4 Server 520M</a
-                >
+                Jasminer X4 Server 520M
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">240</strong><span>W</span>
@@ -2137,11 +1822,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="14.658972">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/fusionsilicon-x6/"
-                  class="text-truncate b-equipment__title"
-                  >FusionSilicon X6</a
-                >
+                FusionSilicon X6
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">1160</strong><span>W</span>
@@ -2163,11 +1844,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="14.488519">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/goldshell-x5/"
-                  class="text-truncate b-equipment__title"
-                  >Goldshell X5</a
-                >
+                Goldshell X5
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">1450</strong><span>W</span>
@@ -2189,11 +1866,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="10.568099">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/innosilicon-a4-ltcmaster/"
-                  class="text-truncate b-equipment__title"
-                  >Innosilicon A4+ LTCMaster</a
-                >
+                Innosilicon A4+ LTCMaster
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">750</strong><span>W</span>
@@ -2215,11 +1888,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.019929">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-d5/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer D5</a
-                >
+                Antminer D5
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">1566</strong><span>W</span>
@@ -2241,11 +1910,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.005482">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-l3/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer L3++</a
-                >
+                Antminer L3++
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">942</strong><span>W</span>
@@ -2267,11 +1932,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.005198">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/bw-l21/"
-                  class="text-truncate b-equipment__title"
-                  >BW L21</a
-                >
+                BW L21
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">950</strong><span>W</span>
@@ -2293,11 +1954,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.015097">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-z9/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer Z9</a
-                >
+                Antminer Z9
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">1150</strong><span>W</span>
@@ -2318,11 +1975,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.029520">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-dr3/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer DR3</a
-                >
+                Antminer DR3
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">1410</strong><span>W</span>
@@ -2344,11 +1997,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.026493">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/ibelink-dsm7t/"
-                  class="text-truncate b-equipment__title"
-                  >iBeLink™ DSM7T</a
-                >
+                iBeLink™ DSM7T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">2100</strong><span>W</span>
@@ -2369,11 +2018,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.019912">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-e3/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer E3</a
-                >
+                Antminer E3
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">800</strong><span>W</span>
@@ -2395,11 +2040,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.019912">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/jasminer-x4-server-2500m/"
-                  class="text-truncate b-equipment__title"
-                  >Jasminer X4 Server 2500M</a
-                >
+                Jasminer X4 Server 2500M
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">800</strong><span>W</span>
@@ -2421,11 +2062,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.005443">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/innosilicon-a5/"
-                  class="text-truncate b-equipment__title"
-                  >Innosilicon A5+</a
-                >
+                Innosilicon A5+
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">750</strong><span>W</span>
@@ -2447,11 +2084,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.001701">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/goldshell-mini-doge/"
-                  class="text-truncate b-equipment__title"
-                  >Майнер Goldshell Mini-DOGE</a
-                >
+                Майнер Goldshell Mini-DOGE
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">233</strong><span>W</span>
@@ -2473,11 +2106,7 @@
             </tr>
             <tr class="js-equipment-row odd" data-crypto-profit="0.003594">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-z9-mini/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer Z9 Mini</a
-                >
+                Antminer Z9 Mini
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">300</strong><span>W</span>
@@ -2498,11 +2127,7 @@
             </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.002847">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/antminer-d3/"
-                  class="text-truncate b-equipment__title"
-                  >Antminer D3</a
-                >
+                Antminer D3
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">970</strong><span>W</span>
@@ -2521,113 +2146,9 @@
                 <div class="text-secondary">0.467820 DASH</div>
               </td>
             </tr>
-            <tr class="js-equipment-row odd" data-crypto-profit="0">
-              <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/innosilicon-a10-485m/"
-                  class="text-truncate b-equipment__title"
-                  >Innosilicon A10 485M</a
-                >
-              </td>
-              <td class="text-nowrap">
-                <strong class="text-primary mr-1">850</strong><span>W</span>
-              </td>
-              <td class="text-nowrap">
-                <strong class="text-primary mr-1">485</strong>
-                <span>Mh/s </span>
-              </td>
-              <td class="text-uppercase"><strong>eth</strong></td>
-              <td>-</td>
-              <td class="sorting_1">-</td>
-              <td>-</td>
-            </tr>
-            <tr class="js-equipment-row even" data-crypto-profit="0">
-              <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/innosilicon-a10-pro-720m/"
-                  class="text-truncate b-equipment__title"
-                  >Innosilicon A10 Pro 720M</a
-                >
-              </td>
-              <td class="text-nowrap">
-                <strong class="text-primary mr-1">1330</strong><span>W</span>
-              </td>
-              <td class="text-nowrap">
-                <strong class="text-primary mr-1">720</strong>
-                <span>Mh/s </span>
-              </td>
-              <td class="text-uppercase"><strong>eth</strong></td>
-              <td>-</td>
-              <td class="sorting_1">-</td>
-              <td>-</td>
-            </tr>
-            <tr class="js-equipment-row odd" data-crypto-profit="0">
-              <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/innosilicon-a10-pro-750m/"
-                  class="text-truncate b-equipment__title"
-                  >Innosilicon A10 Pro+ 750M</a
-                >
-              </td>
-              <td class="text-nowrap">
-                <strong class="text-primary mr-1">1350</strong><span>W</span>
-              </td>
-              <td class="text-nowrap">
-                <strong class="text-primary mr-1">750</strong>
-                <span>Mh/s </span>
-              </td>
-              <td class="text-uppercase"><strong>eth</strong></td>
-              <td>-</td>
-              <td class="sorting_1">-</td>
-              <td>-</td>
-            </tr>
-            <tr class="js-equipment-row even" data-crypto-profit="0">
-              <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/lemons-l6/"
-                  class="text-truncate b-equipment__title"
-                  >Lemons L6</a
-                >
-              </td>
-              <td class="text-nowrap">
-                <strong class="text-primary mr-1">2100</strong><span>W</span>
-              </td>
-              <td class="text-nowrap">
-                <strong class="text-primary mr-1">1700</strong>
-                <span>Mh/s </span>
-              </td>
-              <td class="text-uppercase"><strong>eth</strong></td>
-              <td>-</td>
-              <td class="sorting_1">-</td>
-              <td>-</td>
-            </tr>
-            <tr class="js-equipment-row odd" data-crypto-profit="0">
-              <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/eth-power/"
-                  class="text-truncate b-equipment__title"
-                  >ETH-POWER</a
-                >
-              </td>
-              <td class="text-nowrap">
-                <strong class="text-primary mr-1">2300</strong><span>W</span>
-              </td>
-              <td class="text-nowrap">
-                <strong class="text-primary mr-1">240</strong>
-                <span>Mh/s </span>
-              </td>
-              <td class="text-uppercase"><strong>eth</strong></td>
-              <td>-</td>
-              <td class="sorting_1">-</td>
-              <td>-</td>
-            </tr>
             <tr class="js-equipment-row even" data-crypto-profit="0.022708">
               <td class="dtfc-fixed-left" style="left: 0px; position: sticky">
-                <a
-                  href="https://ultramining.com/hardware/ibelink-dsm6t/"
-                  class="text-truncate b-equipment__title"
-                  >iBeLink™ DSM6T</a
-                >
+                iBeLink™ DSM6T
               </td>
               <td class="text-nowrap">
                 <strong class="text-primary mr-1">2100</strong><span>W</span>
@@ -2652,7 +2173,7 @@
     </div>
   </body>
   <script>
-    const ELECTRICITY_PRICE = 4;
+    const ELECTRICITY_PRICE = 4.5;
     const HOURS_IN_DAY = 24;
     const DAYS_IN_MONTH = 30;
 
