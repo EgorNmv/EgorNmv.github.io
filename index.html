@@ -148,15 +148,21 @@
       }
 
       thead {
-        background: #69ba9a;
-        color: #ffffff;
+        color: rgb(86, 96, 110);
         font-size: 20px;
         font-weight: 400;
         letter-spacing: 0.5px;
       }
 
-      .js-equipment-row:nth-child(2n + 1) {
-        background: rgba(105, 186, 154, 0.5);
+      .js-equipment-row:nth-child(2n + 1),
+      .js-equipment-row:nth-child(2n + 1) > td:first-of-type {
+        background: #69ba9a;
+        color: #ffffff;
+      }
+
+      tr > th:first-of-type,
+      .js-equipment-row:nth-child(2n) > td:first-of-type {
+        background: #ffffff;
       }
     </style>
     <div class="dataTables_scroll dtfc-has-left" style="position: relative">
