@@ -7,6 +7,22 @@
   </head>
   <body>
     <style>
+      @font-face {
+        font-family: "Phenomena";
+        src: url("./assets/fonts/Phenomena-Regular.WOFF") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Phenomena";
+        src: url("./assets/fonts/Phenomena-Bold.WOFF") format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
+
       html,
       body,
       div,
@@ -135,7 +151,8 @@
     <style>
       html {
         font-family: "Phenomena", Arial, sans-serif;
-        color: rgb(86, 96, 110);
+        color: #9ba3b0;
+        font-size: 16px;
       }
 
       td {
@@ -148,9 +165,8 @@
       }
 
       thead {
-        color: rgb(86, 96, 110);
-        font-size: 20px;
-        font-weight: 400;
+        color: #56606e;
+        font-weight: bold;
         letter-spacing: 0.5px;
       }
 
@@ -161,8 +177,12 @@
       }
 
       tr > th:first-of-type,
-      .js-equipment-row:nth-child(2n) > td:first-of-type {
+      .js-equipment-row:nth-child(2n) {
         background: #ffffff;
+      }
+
+      .js-equipment-row:nth-child(2n) {
+        background: #fafafa;
       }
     </style>
     <div class="dataTables_scroll dtfc-has-left" style="position: relative">
